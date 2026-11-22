@@ -16,11 +16,14 @@
     --cream: #fbf0dc; --orange: #f58a2c; --teal: #2aaaa9; --ink: #1a1733; --muted: #d8cfe8;
   }
   * { box-sizing: border-box; }
-  html { background: var(--peach); }
+  html {
+    background: var(--night) linear-gradient(180deg, var(--night) 0%, var(--dusk) 28%, var(--violet) 52%, var(--rose) 78%, var(--peach) 100%) no-repeat;
+    min-height: 100%;
+  }
   body {
     margin: 0; color: var(--cream);
     font: 17px/1.6 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: linear-gradient(180deg, var(--night) 0%, var(--dusk) 28%, var(--violet) 52%, var(--rose) 78%, var(--peach) 100%);
+    background: transparent;
     min-height: 100vh;
   }
   a { color: inherit; }
@@ -61,7 +64,6 @@
 
   /* features */
   section.wrap { padding-top: 56px; padding-bottom: 56px; }
-  section.wrap + section.wrap { border-top: 2px solid rgba(251, 240, 220, .18); }
   h2 { font-size: clamp(28px, 5vw, 40px); line-height: 1.1; margin: 0 0 22px; text-align: center; font-weight: 900;
        text-shadow: 3px 3px 0 var(--ink); }
   .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
