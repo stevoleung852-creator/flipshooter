@@ -75,7 +75,8 @@
   .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
   .duo img { width: 100%; max-width: 440px; justify-self: center; border-radius: 18px; box-shadow: 0 14px 34px rgba(10, 6, 30, .45); }
   .duo h2 { text-align: left; }
-  .duo p { font-size: 18px; }
+  .duo p { font-size: 18px; margin: 0; }
+  .duo .text { background: rgba(26, 23, 51, .82); border: 2px solid rgba(251, 240, 220, .25); border-radius: 14px; padding: 24px; }
   @media (max-width: 820px) { .duo { grid-template-columns: 1fr; } .duo h2 { text-align: center; } }
 
   footer { padding: 36px 0 48px; text-align: center; color: var(--ink); font-size: 15px; }
@@ -118,7 +119,7 @@
 
   <section class="wrap duo">
     <img src="img/duo-laptop-mode.jpg" alt="Flip Shooter on a half-folded iPhone Duo, with the game on top and a trackpad below" loading="lazy">
-    <div>
+    <div class="text">
       <h2>Fold it like a laptop</h2>
       <p>On iPhone Duo, half-fold it and stand it on the table. The game plays on the top half, and the bottom half becomes a trackpad, with BOMB, FLIP and Sound right in front of your thumbs.</p>
     </div>
